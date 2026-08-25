@@ -1,4 +1,4 @@
-import profilePicture from './assets/headshot.png'
+import profilePicture from './assets/headshot.webp'
 import './App.css'
 
 function App() {
@@ -87,29 +87,6 @@ function App() {
               </div>
             </article>
             </a>
-            {/* <article className="project">
-              <span className="project-number">02</span>
-
-              <div>
-                <h3>Project Two</h3>
-                <p>
-                  Description of another project and the technical
-                  problems you solved.
-                </p>
-              </div>
-            </article>
-
-            <article className="project">
-              <span className="project-number">03</span>
-
-              <div>
-                <h3>Project Three</h3>
-                <p>
-                  Description of another interesting technical project.
-                </p>
-              </div>
-            </article> */}
-
           </div>
 
         </section>
