@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  background: #ffffff;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================
+   LEFT SIDEBAR
+========================= */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 247px;
+  height: 100vh;
+
+  padding: 30px 24px;
+
+  border-right: 1px solid #e0e2e5;
+
+  background: #ffffff;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar nav a {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 28px;
+  font-style: italic;
+
+  color: #929baa;
+
+  transition: color 0.2s ease;
+}
+
+.sidebar nav a:first-child {
+  color: #20242a;
+}
+
+.sidebar nav a:hover {
+  color: #20242a;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content {
+  margin-left: 247px;
+
+  max-width: 1250px;
+
+  padding: 0 80px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+  min-height: 100vh;
+
+  padding-top: 35px;
+  padding-bottom: 120px;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-header {
+  width: 100%;
+  max-width: 1100px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+
+  gap: 80px;
+  align-items: start;
+}
+
+.about-text h1 {
+  margin-bottom: 55px;
+
+  font-size: 34px;
+  font-weight: 600;
+
+  letter-spacing: -0.03em;
+
+  color: #3f4650;
+
+  text-align: left;
+}
+
+.about-text p {
+  max-width: 700px;
+
+  margin-bottom: 55px;
+
+  font-size: 20px;
+  line-height: 1.65;
+
+  color: #505762;
+
+  text-align: left;
+}
+
+.about-text a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.profile-container {
+  padding-top: 15px;
+}
+
+.profile-container img {
+  width: 100%;
+
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+
+  border-radius: 2px;
+
+  display: block;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+  min-height: 100vh;
+
+  padding-top: 100px;
+  padding-bottom: 120px;
+
+  border-top: 1px solid #e0e2e5;
+}
+
+.section h2 {
+  margin-bottom: 70px;
+
+  font-size: 34px;
+  font-weight: 600;
+
+  color: #3f4650;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-list {
+  max-width: 900px;
+}
+
+.project {
+  padding: 30px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+  gap: 25px;
+
+  border-bottom: 1px solid #e0e2e5;
+}
+
+.project:first-child {
+  border-top: 1px solid #e0e2e5;
+}
+
+.project-number {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 16px;
+
+  color: #929baa;
+}
+
+.project h3 {
+  margin-bottom: 8px;
+
+  font-size: 22px;
+  font-weight: 500;
+
+  color: #3f4650;
+}
+
+.project h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project h3 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.project-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-link:hover .project h3 {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.project p {
+  font-size: 17px;
+  color: #707780;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+  min-height: 70vh;
+}
+
+.contact-section p {
+  max-width: 700px;
+
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.contact-section a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .sidebar {
+    position: sticky;
+
+    width: 100%;
+    height: auto;
+
+    padding: 18px 24px;
+
+    border-right: none;
+    border-bottom: 1px solid #e0e2e5;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .sidebar nav a {
+    font-size: 20px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 0 24px;
+  }
+
+  .about-section {
+    padding-top: 50px;
+  }
+
+  .about-header {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-text h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .about-text p {
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+
+  .profile-container {
+    max-width: 300px;
+  }
+
+  .section {
+    padding-top: 80px;
+  }
+
+  .section h2 {
+    font-size: 30px;
+  }
+
+  .contact-section p {
+    font-size: 20px;
+  }
+}
