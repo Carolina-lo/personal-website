@@ -39,6 +39,10 @@ function App() {
               </p>
 
               <p>
+                In my free time, I like to run, hike, read, and play pickleball. 
+              </p>
+
+              <p>
                 You can learn more about my background through my{' '}
                 <a href="#projects">projects</a>, or{' '}
                 <a href="#contact">connect</a> with me if you'd like to
@@ -87,6 +91,26 @@ function App() {
               </div>
             </article>
             </a>
+            <a
+              href="https://github.com/Carolina-lo/credit-rates-backtester"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              <article className="project">
+                <span className="project-number">02</span>
+
+                <div>
+                  <h3>Credit/Rates Signal & Execution Backtester</h3>
+                  <p>
+                  A backtesting pipeline for a credit-spread mean-reversion 
+                  strategy, incorporating realistic execution costs and 
+                  per-trade attribution to isolate genuine signal edge from 
+                  crisis-period returns.
+                  </p>
+                </div>
+              </article>
+            </a>
           </div>
 
         </section>
@@ -111,7 +135,7 @@ function App() {
           <p>
             <a href="https://www.linkedin.com/in/carolina-lopez-197670208/" target="_blank">LinkedIn</a>
             {' · '}
-            <a href="#" target="_blank">GitHub</a>
+            <a href="https://github.com/Carolina-lo" target="_blank">GitHub</a>
           </p>
 
         </section>
